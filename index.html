@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Speek to Text</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+	<div class="container text-center d-flex mt-4">
+		<div class="card mx-auto shadow-lg p-3">
+			<div class="card-title p-2">
+				<h3>Text To Speak Project</h3>
+			</div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-3">
+						<select id="voiceList" class="form-control"></select>
+					</div>
+					<div class="col-6">
+						<input type="text" class="form-control" id="speakText" placeholder="Type words to Speak">
+					</div>
+					<div class="col-3">
+						<button class="btn btn-info btn-info px-4  fw-bold text-light" id="readText">Read Text</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-3 mb-3">
+		<div class="row" id="cardContainer"></div>
+	</div>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
